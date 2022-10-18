@@ -11,9 +11,7 @@
 		B1C2C13028FF4EDB0080DF52 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C2C12F28FF4EDB0080DF52 /* ContentView.swift */; };
 		B1C2C13228FF4EDC0080DF52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1C2C13128FF4EDC0080DF52 /* Assets.xcassets */; };
 		B1C2C13528FF4EDC0080DF52 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1C2C13428FF4EDC0080DF52 /* Preview Assets.xcassets */; };
-		B1C2C13F28FF4EDC0080DF52 /* Pokemons_plusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C2C13E28FF4EDC0080DF52 /* Pokemons_plusTests.swift */; };
-		B1C2C14928FF4EDC0080DF52 /* Pokemons_plusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C2C14828FF4EDC0080DF52 /* Pokemons_plusUITests.swift */; };
-		B1C2C14B28FF4EDC0080DF52 /* Pokemons_plusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C2C14A28FF4EDC0080DF52 /* Pokemons_plusUITestsLaunchTests.swift */; };
+		B1C2C15B28FF54AA0080DF52 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C2C15A28FF54AA0080DF52 /* Pokemon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +38,8 @@
 		B1C2C13128FF4EDC0080DF52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1C2C13428FF4EDC0080DF52 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B1C2C13A28FF4EDC0080DF52 /* Pokemons-plusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pokemons-plusTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1C2C13E28FF4EDC0080DF52 /* Pokemons_plusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemons_plusTests.swift; sourceTree = "<group>"; };
 		B1C2C14428FF4EDC0080DF52 /* Pokemons-plusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pokemons-plusUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1C2C14828FF4EDC0080DF52 /* Pokemons_plusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemons_plusUITests.swift; sourceTree = "<group>"; };
-		B1C2C14A28FF4EDC0080DF52 /* Pokemons_plusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemons_plusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B1C2C15A28FF54AA0080DF52 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				B1C2C12C28FF4EDB0080DF52 /* Pokemons-plus */,
-				B1C2C13D28FF4EDC0080DF52 /* Pokemons-plusTests */,
-				B1C2C14728FF4EDC0080DF52 /* Pokemons-plusUITests */,
 				B1C2C12B28FF4EDB0080DF52 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +88,9 @@
 		B1C2C12C28FF4EDB0080DF52 /* Pokemons-plus */ = {
 			isa = PBXGroup;
 			children = (
+				B1C2C15C28FF553C0080DF52 /* Networking */,
+				B1C2C15928FF549B0080DF52 /* View Models */,
+				B1C2C15728FF541B0080DF52 /* Models */,
 				B1C2C12D28FF4EDB0080DF52 /* Pokemons_plusApp.swift */,
 				B1C2C12F28FF4EDB0080DF52 /* ContentView.swift */,
 				B1C2C13128FF4EDC0080DF52 /* Assets.xcassets */,
@@ -110,21 +107,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		B1C2C13D28FF4EDC0080DF52 /* Pokemons-plusTests */ = {
+		B1C2C15728FF541B0080DF52 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B1C2C13E28FF4EDC0080DF52 /* Pokemons_plusTests.swift */,
+				B1C2C15A28FF54AA0080DF52 /* Pokemon.swift */,
 			);
-			path = "Pokemons-plusTests";
+			path = Models;
 			sourceTree = "<group>";
 		};
-		B1C2C14728FF4EDC0080DF52 /* Pokemons-plusUITests */ = {
+		B1C2C15928FF549B0080DF52 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
-				B1C2C14828FF4EDC0080DF52 /* Pokemons_plusUITests.swift */,
-				B1C2C14A28FF4EDC0080DF52 /* Pokemons_plusUITestsLaunchTests.swift */,
 			);
-			path = "Pokemons-plusUITests";
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		B1C2C15C28FF553C0080DF52 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +261,7 @@
 			files = (
 				B1C2C13028FF4EDB0080DF52 /* ContentView.swift in Sources */,
 				B1C2C12E28FF4EDB0080DF52 /* Pokemons_plusApp.swift in Sources */,
+				B1C2C15B28FF54AA0080DF52 /* Pokemon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +269,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1C2C13F28FF4EDC0080DF52 /* Pokemons_plusTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +276,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1C2C14B28FF4EDC0080DF52 /* Pokemons_plusUITestsLaunchTests.swift in Sources */,
-				B1C2C14928FF4EDC0080DF52 /* Pokemons_plusUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
