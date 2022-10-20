@@ -6,3 +6,12 @@
 //
 
 import Foundation
+struct Pokemon: Codable {
+    let abilities: [Ability]?
+    let baseExperience: Int?
+    let height: Int?
+    let id: Int?
+    let name: String?
+    let weight: Int?
+
+}
